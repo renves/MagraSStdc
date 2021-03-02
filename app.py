@@ -6,6 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def get():
 	return jsonify({"message": "ok"})
-
+    return jsonify({"teste"})
+    
 if __name__ == '__main__':
     app.run(threaded=True, port=8080)
